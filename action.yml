@@ -11,7 +11,6 @@ inputs:
   xsdpath:
     description: 'Path to XSD file to use for validation'
     required: true
-outputs:
 runs:
   using: 'node12'
   main: 'dist/index.js'
