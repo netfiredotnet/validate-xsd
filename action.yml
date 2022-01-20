@@ -1,0 +1,17 @@
+name: 'Validate XSD'
+author: NetFire LLC
+description: 'Validate an XML file via XSD in a github workflow action'
+branding:
+  icon: 'file'
+  color: purple
+inputs:
+  xmlpath:
+    description: 'Path to XML file to validate'
+    required: true
+  xsdpath:
+    description: 'Path to XSD file to use for validation'
+    required: true
+outputs:
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
