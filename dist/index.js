@@ -1,6 +1,7 @@
 const core = require("@actions/core");
 const xmllint = require("xmllint");
 const fs = require("fs");
+const performance = require('perf_hooks').performance;
 
 try {
   const xml = core.getInput("xmlpath");
